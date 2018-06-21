@@ -1,0 +1,3 @@
+<span style="line-height: 30px;">{{TransWord::getArabic($props->get(47)->name)}}</span>
+<input name='prop[47]' type="number" value="{{ (!empty($advert_props) && isset($advert_props[47])) ? $advert_props[47][0] : '' }}" class="add_ad_field inline60" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    maxlength = "2" placeholder="Years" />

@@ -1,0 +1,3 @@
+<span class="icon-51 add_ad_option__img"></span>
+<input name="prop[7]" type="number" class="add_ad_option__inline" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+ value="{{ (!empty($advert_props) && isset($advert_props[7])) ? $advert_props[7][0] : '' }}"  maxlength = "6"  placeholder='{{ TransWord::getArabic('Horse power',false) }}' />

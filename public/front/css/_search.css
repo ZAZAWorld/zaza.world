@@ -1,0 +1,78 @@
+.search_modal.open {
+    display: block;
+}
+.search_modal {
+    display: none;
+	background-color: #fefefe;
+	height: 342px;
+	z-index: 9;
+    position: fixed;
+    bottom: 27px;
+    width: 555px;
+    margin-left: -277px;
+    left: 50%;
+	border-radius: 0 0 5px 5px;
+}
+
+.search_modal__close {
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: -11px;
+    right: -13px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #d41f26;
+    width: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+.search_modal__top {
+	border-bottom: 1px solid #15499f;
+    padding: 15px 25px;
+}
+.search_modal__title {
+	font-size: 16px;
+    margin: 0;
+    color: #15499f;
+}
+.search_modal__sub_title {
+	color: #a9aeb2;
+    font-size: 80%;
+}
+.search_modal__search_word {
+	font-size: 16px;
+}
+.search_modal__body {
+	padding: 20px 25px 0 25px;
+    overflow-y: scroll;
+    height: 215px;
+}
+.search_modal_item {
+	margin-bottom: 15px;
+}
+.search_modal_item__title {
+	color: #2b2f32;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.search_modal_item__title b{
+	background: #ffd44f;
+}
+
+.search_modal_item__about {
+
+}
+.search_modal_item_found {
+	color: #8a999e;
+}
+.search_modal_item_found_link {
+	color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+}

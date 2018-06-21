@@ -1,0 +1,189 @@
+.last_ad_block {
+	position: fixed;
+    z-index: 998;
+    width: 310px;
+    height: 60%;
+    overflow: hidden;
+	bottom: 109px;
+    right: 50px;
+    background: #fff;
+    display: none;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.last_ad_item__link {
+	/*text-decoration: underline;
+    color: #15499f;*/
+}
+.last_ad_item__title, .inquiry_item__title  {
+	font-size: 12px;
+    font-weight: 700;
+	padding:0;
+}
+.last_ad_item__note, .inquiry_item__note {
+	font-size: 12px;
+	max-height: 130px;
+    overflow: auto;
+}
+
+.last_ad_item__user_photo_block, .inquiry_item__user_photo_block {
+	width: 35px;
+    height: 35px;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #15499f;
+}
+.last_ad_item__user_photo, .inquiry_item__user_photo {
+	width: 100%;
+}
+.last_ad_item__user_contact_block, .inquiry_item__user_contact_block {
+	margin-left: 15px;
+    float: left;
+    font-size: 10px;
+    color: #568b3e;
+    font-weight: 600;
+}
+.last_ad_item__icon, .inquiry_item__icon{
+	font-size: 17px;
+    line-height: 0.5;
+    margin-right: 3px;
+	vertical-align: middle;
+}
+.last_ad_item__toggle {
+	height: 0;
+    overflow: hidden;
+}
+.last_ad_item__toggle.open {
+	height: 100%;
+}
+.last_ad_item__button_block {
+	border-top: 1px solid #15499f;
+    margin-top: 10px;
+    position: relative;
+}
+.last_ad_item__button_icon {
+	width: 29px;
+    height: 21px;
+    display: inline-block;
+    background-size: cover;
+    cursor: pointer;
+    background-color: #15499f;
+    padding: 2px 4px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    left: 46%;
+    top: -5px;
+}
+.last_ad_item__button_icon_img {
+	width: 100%;
+}
+.last_ad_item__button_icon_img.open {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/* ------- / START INQUERY / ------- */
+
+.inquiry_block{
+	position: fixed;
+    z-index: 998;
+    width: 310px;
+	min-height: 270px;
+    max-height: 84%;
+    overflow: hidden;
+    bottom: 53px;
+    right: 100px;
+    background: #fff;
+    display: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+.inquiry_block.active, .last_ad_block.active, .map-block.open {
+	display: block;
+}
+.inquiry_body {
+	margin-bottom: 20px;
+    max-height: 277px;
+    overflow: auto;
+}
+.inquiry_item, .last_ad_item {
+	margin-bottom: 10px;
+}
+.inquiry_item__toggle{
+	height: 0;
+    overflow: hidden;
+}
+.inquiry_item__toggle.open{
+	height: 100%;
+}
+.inquiry_item__footer, .last_ad_item__footer {
+	overflow: hidden;
+    margin-top: 10px;
+}
+.inquiry_item__button_block {
+	border-top: 1px solid #15499f;
+    margin-top: 10px;
+    position: relative;
+}
+.inquiry_item__button_icon {
+	width: 29px;
+    height: 21px;
+    display: inline-block;
+    background-size: cover;
+    cursor: pointer;
+    background-color: #15499f;
+    padding: 2px 4px;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    left: 46%;
+    top: -5px;
+}
+.inquiry_item__button_icon_img {
+	width: 100%;
+}
+.inquiry_item__button_icon_img.open{
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.inquiry_footer{
+	overflow: hidden;
+    margin-top: 10px;
+}
+.inquiry_footer_field{
+	margin-bottom: 5px;
+    width: 100%;
+}
+.inquiry__input{
+	width: 100%;
+    margin: 7px 0px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    border: 1px solid #15499f;
+    display: block;
+}
+textarea.inquiry__input{
+	font-size:12px;
+	padding: 5px;
+}
+textarea.inquiry__input:focus, textarea.inquiry__input:hover, select.inquiry__input:hover, select.inquiry__input:focus {
+	-webkit-box-shadow: 0 0 10px rgba(105, 105, 105, 0.30);
+    -moz-box-shadow: 0 0 10px rgba(105, 105, 105, 0.30);
+    -o-box-shadow: 0 0 10px rgba(105, 105, 105, 0.30);
+    box-shadow: 0 0 10px rgba(105, 105, 105, 0.30);
+	transition: all 0.4s ease;
+}
+select.inquiry__input{
+	font-size:14px;
+	padding: 2px 3px;
+	color: #15499f;
+}
+
+/* ------- / END INQUERY / ------- */

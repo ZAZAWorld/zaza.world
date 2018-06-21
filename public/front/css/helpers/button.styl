@@ -1,0 +1,41 @@
+[class^="h-button"], [class*=" h-button"]
+    box-sizing: border-box
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+
+.h-button
+    visibility: visible;
+    &_red, &_blue, &_fiol, &_green
+        transition: all 0.4s ease;
+        &:hover
+            transition: all 0.4s ease;
+    &_red
+        border: 1px solid c_red;
+        background: c_red;
+        color: #fff;
+        &.active, &:hover
+            background: #fff;
+            color: c_red;
+    &_blue
+        border: 1px solid c_blue;
+        background: c_blue;
+        color: #fff;
+        &.active, &:hover
+            background: #fff;
+            color: c_blue;
+    &_fiol
+        border: 1px solid c_fiol;
+        background: c_fiol;
+        color: #fff;
+        &.active, &:hover
+            background: #fff;
+            color: c_fiol;
+    &_green
+        border: 1px solid c_green;
+        background: c_green;
+        color: #fff;
+        &.active, &:hover
+            background: #fff;
+            color: c_green;

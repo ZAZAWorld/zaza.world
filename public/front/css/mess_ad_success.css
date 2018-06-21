@@ -1,0 +1,108 @@
+.c-avd-modal {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    z-index: 999;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.c-avd-modal .c-avd-modal-inner {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+.c-avd-modal .c-avd-modal-inner .c-avd-modal__header {
+    background-color: #8bc34a;
+    color: #ffffff;
+}
+.c-avd-modal .c-avd-modal__head {
+    padding: 13px;
+    line-height: 1em;
+    text-align: center;
+    font-size: 1.3em;
+}
+.c-avd-modal .c-avd-modal__body {
+    padding: 35px;
+}
+@media (max-width: 768px) {
+    .c-avd-modal .c-avd-modal__body {
+        padding: 20px;
+    }
+}
+@media (max-width: 568px) {
+    .c-avd-modal .c-avd-modal__body {
+        padding: 15px;
+    }
+}
+.c-avd-modal .c-avd-modal__close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    color: #ffffff;
+    background: #d41f26;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 0px 1px 1px 0px;
+    border: 1px solid #d41f26;
+    cursor: pointer;
+}
+.c-avd-modal .c-avd-modal__close:hover {
+    background: #ffffff;
+    color: #d41f26;
+}
+.c-avd-modal .c-avd-modal__message {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.c-avd-modal .c-avd-modal__app {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.c-avd-modal .c-avd-modal__app span {
+    font-weight: bold;
+}
+.c-avd-modal .c-avd-modal__close--button {
+    text-align: center;
+}
+.c-avd-modal .c-avd-modal__close--button .c-button {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.c-button.c-button--green {
+    color: #ffffff;
+    background: #568b3e;
+    border-color: #568b3e;
+}
+.c-button.c-button--green:hover {
+    background: #ffffff;
+    color: #568b3e;
+}
+.c-button.c-button--lightgreen {
+    color: #ffffff;
+    background: #8bc34a;
+    border-color: #8bc34a;
+}
+.c-button.c-button--lightgreen:hover {
+    background: #ffffff;
+    color: #8bc34a;
+}

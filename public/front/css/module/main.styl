@@ -1,0 +1,153 @@
+/*!******  Alert to horizontal device size ***********/
+.bg_alert_lands {
+    display: none;
+}
+
+@media only screen and (max-device-width: 549px) {
+    .bg_alert_lands {
+        position: absolute;
+        z-index: 999999999;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        font-size: 3em;
+        display: block;
+    }
+
+    .body {
+        display: none;
+    }
+
+}
+/*!******* m-company-bar *****/
+.m-company-bar
+    z-index: 10;
+    position: fixed;
+    top: 120px;
+    width: 50%;
+    left: 25%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    &__item
+        width: 33.33%;
+        padding: 10px 15px;
+
+/*!******* m-advert-bar ******/
+.m-advert-bar
+    z-index: 10;
+    position: fixed;
+    top: 200px;
+    width: 40%;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    &__link
+        color: #fff;
+        font-size: 3.4em;
+        display: block;
+
+/*!****** m-search ******/
+.m-search
+    height: 40px;
+    z-index: 10;
+    position: fixed;
+    bottom: 27px;
+    width: 50%;
+    margin: 0 auto;
+    left: 25%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: space-around;
+    &__input
+        margin: 0;
+        border: 0
+        display: block;
+        float: left;
+        height: 100%
+        width: 94%
+        background: #fff;
+        opacity: 0.5;
+        border-radius: 5px 0 0 5px;
+        padding-left: 15px;
+        font-size: 2.0em;
+    &__value
+        margin: 0;
+        border: 0
+        display: block;
+        float: left;
+        height: 100%
+        width: 5%
+        opacity:1.0
+        background-color: #15499f
+        background-image: url(../img/search-icon.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 0 5px 5px 0;
+
+/*!****** m-right-buttons *******/
+.m-right-buttons
+    z-index: 10;
+    position: fixed;
+    bottom: 27px;
+    right: 15px;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items:flex-end;
+    & .inquiry
+        button-template(#2962ff)
+        margin: 7px 0;
+        display: block;
+        order: 1;
+        padding: 0 15px 5px 15px;
+        &__spec
+            font-size: 1.5em;
+            position: relative;
+            top: 4px;
+    & .watchs
+        curcle-template(#568b3e)
+        margin: 7px 0;
+        display: block;
+        order: 2;
+        width: 38px;
+        height: 38px;
+        &__spec
+            font-size: 1.5em;
+    & .adverts
+        curcle-template(#d41f26)
+        margin: 7px 0;
+        display: block;
+        order: 3;
+        width: 38px;
+        height: 38px;
+        &__spec
+            font-size: 1.5em;
+    & .maps
+        curcle-template(#d93300)
+        margin: 7px 0;
+        display: block;
+        order: 4;
+        width: 38px;
+        height: 38px;
+        &__spec
+            font-size: 1.5em;
+    & .radio
+        curcle-template(#6200ea)
+        margin: 7px 0;
+        display: block;
+        order: 5;
+        width: 38px;
+        height: 38px;
+        &__spec
+            font-size: 1.5em;
+
+/*!****** slider ******/
+.m-slider
+    z-index: -10
+    &__image
+        width: 100%;
+        height: auto;

@@ -1,0 +1,633 @@
+.mini_advert {
+	width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 7px 1px #ccc;
+    -moz-box-shadow: 0px 2px 7px 1px #ccc;
+    -o-box-shadow: 0px 2px 7px 1px #ccc;
+    box-shadow: 0px 2px 7px 1px #ccc;
+}
+.mini_advert_img {
+	width: 100%;
+}
+.mini_advert_img__text-block {
+	width: 100%;
+    padding: 5px 5px;
+}
+.mini_advert_img__title {
+	font-size: 12px;
+}
+.mini_advert__close {
+	color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: -11px;
+    right: -13px;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #d41f26;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px 0 0 2px;
+}
+
+.ad_advertising_block {
+	position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+.ad_advertising_button {
+	background: #fff;
+    border: 1px solid #fff;
+    color: #5595f9;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.ad_advertising_button:hover{
+	opacity: 1;
+}
+
+
+/********** block dialog update blog ***************/
+.blog_dialog_edit{
+	position: fixed;
+    top: 100px;
+    width: 30%;
+    left: 35%;
+    z-index: 95;
+    background: #fff;
+    display: none;
+}
+.blog_dialog_edit.open{
+	display: block;
+}
+.blog_dialog_edit__close{
+	position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    right: -11px;
+    padding: 1px 6px 2px 7px;
+    cursor: pointer;
+    z-index: 15;
+}
+.blog_dialog_edit__body{
+	overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+.blog_dialog_edit_photo__square{
+	width: auto;
+    padding: 10px;
+    border: 1px solid #15499f;
+    max-width: 200px;
+	position: relative;
+}
+.blog_dialog_edit_photo__image{
+	width: 100%;
+}
+.blog_dialog_edit_photo__file{
+	visibility: hidden;
+}
+.blog_dialog_edit__text{
+	width: 100%;
+    border: 1px solid #15499f;
+    padding: 3px 5px;
+}
+.blog_dialog_edit_bottom{
+	overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 13px;
+}
+.blog_dialog_edit__cancel{
+	display: block;
+    float: left;
+    background: #5694fa;
+    border: 0;
+    color: #fff;
+    padding: 5px 23px;
+    border-radius: 5px;
+    font-size: 16px;
+	text-align: center;
+    width: 30%;
+}
+.blog_dialog_edit__submit{
+	display: block;
+    float: right;
+    background: #15499f;
+    border: 0;
+    color: #fff;
+    padding: 5px 23px;
+    border-radius: 5px;
+    font-size: 16px;
+	text-align: center;
+    width: 30%;
+}
+.blog_dialog_edit__title {
+	
+}
+.blog_dialog_edit__label{
+	
+}
+.blog_dialog_edit_photo__add{
+	background: #15499f;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    padding: 0px 0px 1px 6px;
+    font-weight: 600;
+    position: absolute;
+    cursor: pointer;
+    top: -8px;
+    right: -10px;
+	width: 20px;
+    height: 20px;
+}
+
+/************ advert update dialog ************/
+.ad_dialog_edit{
+	position: absolute;
+    top: 47px;
+    width: 500px;
+    left: 30%;
+    z-index: 999999999999999999999;
+    background: #fefefe;
+    display: none;
+}
+.ad_dialog_edit.open{
+	display: block;
+}
+.ad_dialog_edit__close{
+	position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    right: -11px;
+    background: #d41f26;
+    color: #fff;
+    font-size: 16px;
+    padding: 1px 6px 2px 7px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 15;
+}
+.ad_dialog_edit__body{
+	margin: auto;
+    width: 90%;
+    padding: 25px 0;
+}
+.ad_dialog_edit__title{
+	
+}
+.ad_dialog_edit__label{
+	
+}
+.ad_dialog_edit_photo__square{
+	padding: 10px;
+    border: 1px solid #15499f;
+    position: relative;
+    height: 98px;
+    width: 129px;
+    float: left;
+    margin: 10px 20px 10px 5px;
+    overflow: hidden;
+    text-align: center;
+
+    padding: 1px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,244,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(237,244,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(237,244,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edf4ff',GradientType=0 );
+
+}
+.ad_dialog_edit_photo__image{
+    max-width: 100%;
+    max-height: 100%;
+}
+.ad_dialog_edit_photo__add{
+	background: #15499f;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    padding: 1px 4px 1px 4px;
+    font-weight: 600;
+    position: absolute;
+    cursor: pointer;
+    top: -8px;
+    right: -10px;
+}
+.ad_dialog_edit_photo__file{
+	display: none;
+}
+.ad_dialog_edit__text{
+	width: 100%;
+    border: 1px solid #15499f;
+    padding: 3px 5px;
+}
+.ad_dialog_edit_bottom{
+	overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 13px;
+}
+.ad_dialog_edit__cancel{
+	display: block;
+    float: left;
+    background: #5694fa;
+    border: 0;
+    color: #fff;
+    padding: 5px 23px;
+    border-radius: 5px;
+    font-size: 16px;
+	text-align: center;
+    width: 30%;
+}
+.ad_dialog_edit__submit{
+	display: block;
+    float: right;
+    background: #15499f;
+    border: 0;
+    color: #fff;
+    padding: 5px 23px;
+    border-radius: 5px;
+    font-size: 16px;
+	text-align: center;
+    width: 30%;
+}
+.ad_dialog_edit__row{
+	margin-bottom: 5px;
+}
+.ad_dialog_edit_photo__square__upload_img{
+	margin: 10px 0 6px 0;
+}
+.ad_dialog_edit_photo__square__upload_text{
+	color: #15499f;
+    font-size: 10px;
+}
+.ad_dialog_edit_photo__square-add{
+	text-align: center;
+	cursor: pointer;
+}
+.ad_dialog_edit_photo__del_link{
+	position: absolute;
+    color: red;
+    cursor: pointer;
+    /*bottom: -5px;*/
+    right: 2px;
+    font-size: 12px;
+    font-weight: 600;
+}
+/************* advert update block *************/
+.advert_edit_block{
+	text-align: right;
+    padding: 0 10px 10px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+	z-index: 9;
+}
+.advert_top_block{
+	text-align: left;
+    padding: 0 10px 10px 0;
+    position: absolute;
+    bottom: -3px;
+    left: 10px;
+    font-size: 12px;
+	z-index: 9;
+}
+
+.advert_edit_block .renew, .advert_top_block .renew, .advert_edit_block .edit, .advert_edit_block .delete, .advert_top_block .top_ico_small {display:inline-block;}
+.advert_edit_block .renew, .advert_top_block .renew {background: url("./../images/refresh_ico.png") no-repeat; width:18px; height:18px;}
+.advert_edit_block .edit {background: url("./../images/edit_ico.png") no-repeat; width:16px; height:16px;}
+.advert_top_block .top_ico_small {background: url("./../images/top_ico_small.png") no-repeat; width:24px; height:18px; margin-right:5px;}
+i.delete {background: url("./../images/delete_ico.png") no-repeat; width:14px; height:14px;}
+.advert_edit_block__link{
+	text-decoration: underline;
+}
+.advert_edit_block__blue{
+	color: #2962ff;
+}
+.advert_edit_block__green{
+	color: #568b3e;
+}
+.advert_edit_block__red{
+	color: #d41f26;
+}
+/*********** callback styles ***********/
+.callback_block{
+	position: absolute;
+    z-index: 9;
+    top: 275px;
+    width: 285px;
+    background: #15499f;
+    padding: 19px 0 19px 0;
+	display:none;
+}
+.callback_block.open{
+	display: block;
+}
+.callback_close{
+	width: 26px;
+    height: 26px;
+    display: block;
+    background: #d41f26 url(/front/img/close_icon.png) no-repeat center;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+    text-indent: -9999px;
+    overflow: hidden;
+	
+    position: absolute;
+    top: -9px;
+    right: -8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 3px 6px 3px 6px;
+    cursor: pointer;
+}
+.callback_body{
+	width: 85%;
+    margin: 10px auto;
+}
+.callback_input {
+	width: 100%;
+    padding: 10px 15px;
+    background: #fff;
+    border: 1px solid #15499f;
+    border-radius: 10px;
+}
+
+.callback_submit {
+	background: #15499f;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid #fff;
+	transition: width 0.4s, background 0.4s;
+}
+
+.callback_submit:hover {
+	color: #15499f;
+	background: #fff;
+	transition: width 0.4s, background 0.4s;
+}
+
+.p_p_interest_new_block_button_block {
+	display: inline-block;
+	background: #d3d3d3;
+    border-radius: 20px;
+    margin: 5px;
+	transition:all 0.3s ease;
+}
+.p_p_interest_new_block_button_image_block{
+	display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-left: 2px;
+    padding: 4px;
+    background: #c71f1f;
+    border-radius: 50%;
+	
+	-webkit-box-shadow: -2px 3px 22px -2px rgba(0,0,0,0.64);
+	-moz-box-shadow: -2px 3px 22px -2px rgba(0,0,0,0.64);
+	box-shadow: -2px 3px 22px -2px rgba(0,0,0,0.64);
+	
+	transition:all 0.3s ease;
+}
+.p_p_interest_new_block_button_image{
+	width: 100%;
+}
+.p_p_interest_new_block_button {
+	display: block;
+    margin: 6px 13px 0 0;
+    border: 0;
+    background: none;
+	color: #1f1f1f;
+	transition:all 0.3s ease;
+	cursor: auto;
+}
+
+.p_p_interest_new_block_button_block_hover {
+	cursor: pointer;
+}
+
+.p_p_interest_new_block_button_block_hover.p_p_interest_new_block_button_block:hover, .p_p_interest_new_block_button_block.unselect{
+	background: #e1e1e1;
+}
+
+.p_p_interest_new_block_button_block_hover.p_p_interest_new_block_button_block:hover .p_p_interest_new_block_button_image_block, .p_p_interest_new_block_button_block.unselect .p_p_interest_new_block_button_image_block{
+	background: #a4a4a4;
+}
+.p_p_interest_new_block_button_block_hover.p_p_interest_new_block_button_block:hover .p_p_interest_new_block_button, .p_p_interest_new_block_button_block.unselect .p_p_interest_new_block_button{
+	color: #7d7d7d;
+	cursor: pointer;
+}
+
+.p_p_interest_new_block_button_block_hover.p_p_interest_new_block_button_block.unselect:hover{
+	background: #d3d3d3;
+}
+
+.p_p_interest_new_block_button_block_hover.p_p_interest_new_block_button_block.unselect:hover .p_p_interest_new_block_button_image_block{
+	background: #c71f1f;
+}
+.p_p_interest_new_block_button_block_hover.p_p_interest_new_block_button_block.unselect:hover .p_p_interest_new_block_button{
+	color: #1f1f1f;
+	cursor: pointer;
+}
+
+.person_change_pass_title{
+	color: #e32b00;
+    font-size: 18px;
+    font-weight: 600;
+}
+.person_change_pass_form{
+	
+}
+.person_change_pass_input{
+	border: 1px solid #1249a3;
+	border-radius: 5px;
+	padding: 7px 12px;
+	width: 90%;
+	margin-bottom: 13px;
+}
+.person_change_pass_cancel{
+	background: #d41f26;
+	border: 1px solid #d41f26;
+	border-radius: 5px;
+	color: #fff;
+	padding: 8px 0;
+	width: 37%;
+	transition:all 0.3s ease;
+}
+.person_change_pass_save{
+	background: #588f3e;
+	border: 1px solid #588f3e;
+	border-radius: 5px;
+	color: #fff;
+	padding: 8px 0;
+	width: 37%;
+	margin-left: 15%;
+	transition:all 0.3s ease;
+}
+.person_change_pass_cancel:hover{
+	color: #d41f26;
+	background: #fff;
+}
+.person_change_pass_save:hover{
+	color: #588f3e;
+	background: #fff;
+}
+.catalogs .advert_wrapper {float:left; position:relative; padding-bottom: 25px;}
+
+.delete_ad_block {
+	position: fixed;
+    z-index: 9999;
+    width: 400px;
+    overflow: hidden;
+    bottom: 40%;
+    right: 39%;
+    background: #fff;
+    border-radius: 5px;
+	display: none;
+}
+.delete_ad_block.active{
+	display: block;
+	
+}
+.delete_ad_block_header{
+	background-color: #8bc34a;
+	color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+.delete_ad_block_body{
+	text-align: center;
+    padding: 15px 10px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.delete_ad_block_button_ok{
+	float: left;
+    width: 30%;
+    margin-left: 10%;
+    cursor: pointer;
+    background: #8bc34a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.delete_ad_block_button_no{
+	float: right;
+    width: 30%;
+    margin-right: 10%;
+    cursor: pointer;
+    background: #d41f26;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.delete_ad_block_button_ok:hover, .delete_ad_block_button_no:hover {
+	opacity: 0.5;
+}
+
+.to_top_block {
+	position: fixed;
+    z-index: 9999;
+    width: 345px;
+    overflow: hidden;
+    top: 30%;
+    right: 39%;
+    background: #fff;
+    border-radius: 5px;
+	display: none;
+}
+.to_top_block.active{
+	display: block;
+	
+}
+.to_top_block_header{
+	background-color: #8bc34a;
+	color: #ffffff;
+    text-align: center;
+    padding: 0;
+    font-size: 1.3em;
+}
+.to_top_block_body{
+	text-align: center;
+    padding: 15px 10px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.to_top_block_button_ok{
+	float: left;
+    width: 30%;
+    margin-left: 10%;
+    cursor: pointer;
+    background: #8bc34a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.to_top_block_button_no{
+	float: right;
+    width: 30%;
+    margin-right: 10%;
+    cursor: pointer;
+    background: #d41f26;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.to_top_block_button_ok:hover, .delete_ad_block_button_no:hover {
+	opacity: 0.5;
+}
+
+
+.ad-modal_bg {
+	position: absolute;
+    width: 100%;
+}
+.cheque_ico {background:url(../images/cheque.gif)no-repeat center center; width:17px; height:24px; float: left; margin-right: 9px;}
+.term_ico {background:url(../images/terms.gif)no-repeat center center; width:23px; height:24px; float: left; margin-right: 9px;}
+.inline60 {display:inline-block; width:60%; float:right;}
+
+.show_ad_color_option .Gold-456, .Gold {background:url(../images/gold_met.png) no-repeat center center; }
+.show_ad_color_option .Silver-36, .Silver {background:url(../images/silver_met.png) no-repeat center center; }
+.show_ad_color_option .Purple-44, .Purple {background: #a200ff !important; }
+.show_ad_color_option .Brown-42, .Brown {background: #533701 !important; }
+.show_ad_color_option .Red-37, .Red {background: #ff000c !important; }
+.show_ad_color_option .Blue, .Blue-38 {background: #087fca !important; }
+.show_ad_color_option .Green, .Green-39 {background: #4bba09 !important; }
+.show_ad_color_option .Yellow-40, .Yellow {background: #ffde00 !important; }
+.show_ad_color_option .Milk-455, .Milk {background: #fee1b4 !important; }
+
+.comment_avtor {text-decoration:none !important; color:#15499f;}
+
+.save_edit_step{
+    display: none;
+}
+.first_edit_step{
+    display: block;
+}

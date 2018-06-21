@@ -1,0 +1,11 @@
+.radio_block{position:fixed;z-index:999;width:410px;height:40px;overflow:hidden;bottom:10px;left:10px;background:#eaeaea;display:none;padding:2px 5px;border-radius:5px;}
+.radio_block.active{display:block;}
+.radio_play_block{float:left;margin:1px 5px;font-size:20px;border-radius:50%;border:4px solid #8bbb55;color:#8bbb55;padding:0 0 0 3px;cursor:pointer;width:35px;height:35px;text-align:center;}
+.radio_play{}
+.radio_body{float:left;background:#f4f4f4;border-radius:5px;border:1px solid #c7c4c4;padding:2px 5px;overflow:hidden;width:55%;position:relative;top:6px;}
+.radio_station_title{float:left;width:55%;font-size:9px;}
+.radio_station_select_block{font-size:10px;float:right;width:42%;}
+.radio_station_select{width:87px;}
+.radio_volume_block{float:left;width:16%;margin:0 15px;position:relative;top:6px;}
+.radio_volume{width:100%;}
+.radio_close{color:#d53339;font-weight:600;cursor:pointer;position:relative;top:8px;float:left;}

@@ -1,0 +1,1201 @@
+
+
+/********* snippets *****/
+.shadow
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+
+/*!****** total blur ****/
+.total_blur
+    z-index: 50;
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blur'><feGaussianBlur stdDeviation='3'/></filter></svg>#blur");
+
+/*!****** total blur ****/
+.normal_blur
+    z-index: 1;
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blur'><feGaussianBlur stdDeviation='3'/></filter></svg>#blur");
+
+
+
+.p_conteiner
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    max-width: 980px;
+/*!************ title block  ************/
+.p_title
+    margin: 77px 0 0 0;
+    height: 116px;
+    box-shadow: 0px 5px 100px -30px #000;
+    padding-top: 20px;
+    &__name
+        float: left;
+        margin: 16px 0 0 0;
+        font-size: 2.2em;
+    &__buttons
+        float: right;
+        margin: 17px 0 0 0;
+    &__button
+        float: left;
+        margin-left: 15px;
+        height: 20px
+        &__chat
+            visibility: visible;
+            &__img
+                width: auto;
+                height: 100%;
+                top: 5px;
+                position: relative;
+                margin-right: 6px;
+            &__text
+                font-size: 1.5em;
+                border-bottom: 1px dotted #263238;
+        &__onlain
+            font-size: 0.9em;
+            width: 130px;
+            &__circle
+                height: 20px;
+                width: 20px;
+                display: block;
+                float: left;
+                margin: 5px 9px 5px 5px;
+                border-radius: 50%;
+                overflow: hidden;
+                background: #d41f26;
+            &.active &__circle
+                background: #8bc34a;
+
+.p_personal
+    max-width: 980px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 20px 0;
+    &__left
+        float: left;
+        width: 30%;
+        border-right: 1px solid #15499f;
+
+        &_block
+            padding-top: 25px;
+            padding-right: 10px
+            &:after
+                width: 40%;
+                content: ' ';
+                height: 1px;
+                background: #d41f26;
+                display: block;
+                margin-top: 25px;
+            & .p_p_logo
+                width: 150px;
+                height: 150px;
+                margin: auto;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 3px solid #15499f;
+                & img
+                    width: 100%;
+            & .p_p_location
+                margin: 10px 0 0 0;
+                font-size: 1.1em;
+                & img
+                    width: auto;
+            & .p_p_about
+                visibility: visible;
+                &__title
+                    font-size: 1.4em
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    display: block;
+            & .p_p_phones
+                font-size: 1.15em;
+                & img
+                    width: auto;
+                    margin-right: 8px;
+            & .p_p_social
+                font-size: 1.2em;
+                &__text
+                    display: inline-block;
+                    position: relative;
+                    top: -6px;
+                & img
+                    width: auto;
+                    height: auto;
+                    max-height: 25px;
+                    margin-right: 8px;
+        & .p_personal__left_tab
+            margin-top: 25px;
+            &__li
+                display: block;
+                width: 100%;
+                margin-bottom: 2px;
+                &_title
+                    display: block;
+                    width: 130%;
+                    padding: 6px 0;
+                    background: #15499f;
+                    color: #fff;
+                    position: relative;
+                    left: -30%;
+                    padding-left: 30%;
+                    font-size: 1.2em;
+                    cursor: pointer;
+                &_open
+                    content: ' + '
+                    display: block;
+                    float: right;
+                    width: 23px;
+                    height: 23px;
+                    color: #fff;
+                    margin-right: 10px;
+                    border: 1px solid #fff;
+                    text-align: center;
+                    border-radius: 50%;
+                    &.active
+                        content: ' - '
+            &__sub_li
+                display: block;
+                width: 100%;
+                font-size: 1.15em;
+                text-decoration: underline;
+                margin: 5px 0;
+                & img
+                    margin-right: 11px
+    &__content
+        float: left;
+        width: 70%;
+        padding-left: 28px;
+
+
+.p_p_button_block
+    margin: 10px 0;
+    & .p_p_button
+        button-login-template(#15499f, #fff, #fff)
+        border: 1px solid #15499f;
+        box-shadow: none;
+        width: auto;
+        display: inline-block;
+        margin: 0 5px 7px 0;
+        font-size: 1.2em;
+        &.active, &:hover
+            color: #15499f
+            border: 1px solid #15499f;
+
+.p_p_interest_block
+    margin: 10px 0;
+    &_title
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 5px;
+        color: #15499f;
+        font-weight: 600;
+    &_buttons
+        visibility: visible;
+    &_button
+        button-login-template(#568b3e, #fff, #fff)
+        border: 1px solid #568b3e;
+        box-shadow: none;
+        width: auto;
+        display: inline-block;
+        margin: 0 5px 7px 0;
+        font-size: 1.05em;
+        padding: 2px 7px;
+        &.active, &:hover
+            color: #8bc34a
+            border: 1px solid #8bc34a;
+            background: #8bc34a;
+            color: #fff;
+        &.unselect
+            color: #626262;
+            border: 1px solid #626262;
+            background: #626262;
+            color: #fff;
+            &:hover
+                color: #8bc34a
+                border: 1px solid #8bc34a;
+                background: #8bc34a;
+                color: #fff;
+
+/*!***** p_p_add_blog *****/
+.p_p_add_blog
+    border: 1px solid #15499f;
+    border-radius: 5px;
+    padding: 5px 3px;
+    position: relative;
+    &__form
+        visibility: visible;
+    &__input
+        width: 80%;
+        padding: 4px 5px;
+        border: 0;
+    &__file
+        display: none;
+    &__img
+        width: auto;
+        cursor: pointer;
+        position: absolute;
+    &__submit
+        width: 15%;
+        background: #15499f;
+        color: #fff;
+        border: 1px solid #15499f;
+        overflow: hidden;
+        border-radius: 5px;
+        font-size: 1.2em;
+        padding: 2px 0;
+        position: absolute;
+        top: 3px;
+        right: 9px;
+        &:hover
+            background: #fff;
+            color: #15499f;
+            transition: all 0.4s ease;
+
+
+.p_p_contents
+    margin: 15px 0;
+
+.p_p_content
+    width: 100%;
+    position: relative;
+    margin: 35px 0;
+    &_image_block
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        & img
+            width: 100%;
+    &_profile
+        position: absolute;
+        bottom: 6px;
+        left: 40px;
+        z-index: 1;
+        &_image_block
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            & img
+                width: 100%;
+        &_text
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 600;
+    &_bottom
+        background: #b8c8e2;
+        overflow: hidden;
+        position: relative;
+        &.hide
+            height: 75px;
+        &_name
+            margin: 10px 0 5px 30%;
+            font-size: 1.2em;
+            font-weight: 600;
+            overflow: hidden;
+            &.hide
+                height: 15px;
+        &_icons
+            margin: 8px 0 5px 30%;
+        &_icon
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 1.0em;
+            & img
+                margin-right: 4px;
+                width: auto;
+                height: 13px;
+            &_calendar
+                visibility: visible;
+            &_message
+                visibility: visible;
+    &_button
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        background: #2a63fb;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        & img
+            width: 100%;
+
+.p_slider_menu
+    overflow: hidden;
+    max-width: 980px;
+    width: 100%;
+    margin: 15px auto 15px auto;
+    &__left
+        float: left;
+        width: 60%;
+    &__right
+        float: left;
+        width: 40%;
+
+.p_slider
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 285px;
+    &__before, &__after
+        position: absolute;
+        top: 40%;
+        font-size: 4.5em;
+        color: #fff;
+        cursor: pointer;
+    &__before
+        left: 15px;
+    &__after
+        right: 15px;
+    &__item
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        height: 285px;
+        & img
+            width: 100%;
+.p_menu
+    width: 100%;
+    overflow: hidden;
+    &__item
+        float: left;
+        width: 50%;
+        height: 145px;
+        border-bottom: 4px solid #fff;
+        border-left: 4px solid #fff;
+        position: relative;
+        overflow: hidden;
+    &__img
+        height: 100%;
+    &__name
+        display: block;
+        position: absolute;
+        top: 40%;
+        color: #fff;
+        font-size: 1.2em;
+        left: 20%;
+        width: 60%;
+        font-weight: 600;
+        text-align: center;
+
+/*!****** p_panel block (in cabinet page)********/
+.p_panel
+    width: 100%;
+    box-shadow: 0px 0px 12px 0.5px rgba(125,125,125, 0.5);
+    overflow: hidden;
+    padding: 6px 0;
+    &__content
+        overflow: hidden;
+        width: 100%;
+        max-width: 980px;
+        margin: 5px auto 5px auto;
+    &__left
+        overflow: hidden;
+        float: left;
+    &__map
+        float: left;
+    &__rignt
+        float: right;
+
+.p_panel_location
+    float: left;
+    margin-right: 20px;
+    &__item
+        display: block;
+    &__img
+        margin-right: 6px;
+    &__text
+        font-size: 1.1em;
+        &-red
+            color: #dd2c00;
+
+.p_panel_map_button
+    border: 1px solid #dd2c00;
+    background: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #dd2c00;
+    outline: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 5px;
+    & img
+        width: auto
+
+.p_panel_visitor
+    font-size: 1.1em;
+    &__name
+        color: #78909c;
+    &__val
+        color: #568b3e;
+        font-weight: 600;
+        font-size: 1.1em;
+    &__icon
+        position: relative;
+        bottom: -4px;
+        margin-left: 5px;
+
+.p_panel_buttons
+    float: left;
+    &__item
+        border: 1px solid #15499f;
+        outline: 0;
+        overflow: hidden;
+        border-radius: 5px;
+        background: #15499f;
+        color: #fff;
+        padding: 3px 10px;
+        margin-right: 5px;
+        &:hover, &.active
+            background: #fff;
+            color: #15499f;
+
+
+.p_restaran
+    max-width: 980px;
+    width: 100%;
+    margin: 15px auto;
+    overflow: hidden;
+    &__left
+        float: left;
+        width: 70%;
+        overflow: hidden;
+    &__rignt
+        float: left;
+        width: 30%;
+        overflow: hidden;
+
+.p_r_profile
+    box-shadow: 0px 0px 10px 0px rgba(92,92,92,1);
+    width: 98%;
+    margin: 15px 1%;
+    border-radius: 5px;
+    padding: 20px;
+
+.p_r_cousine
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    &__title
+        color: #15499f;
+        font-weight: 600;
+
+.p_r_timetable
+    width: 100%;
+    overflow: hidden;
+    &__day
+        float: left;
+        padding: 2px;
+        width: 14.28%
+    &__square
+        background: #568b3e;
+        color: #fff;
+        font-size: 1.3em;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+    &__time
+        color: #555c60;
+        font-size: 0.8em;
+
+.p_r_vote
+    width: 100%;
+    margin: 15px 0;
+    &__item
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        margin-bottom: -8px;
+    &__name
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+        font-weight: 600;
+    &__ball
+        float: left;
+        width: 10%;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #d41f26;
+    &__stars
+        float: left;
+        width: 50%;
+        position: relative;
+        top: -6px;
+    &__star
+        color: #ddd;
+        font-size: 1.6em;
+        position: relative;
+        cursor: pointer;
+        &-full:before
+            color: #dc8600;
+            content: '\2605'; /* Full star in UTF-8 */
+            position: absolute;
+            left: 0;
+        &-half:before
+            color: #dc8600;
+            content: '\2605';
+            position: absolute;
+            left: 0;
+            width: 50%;
+            overflow: hidden;
+        &-empty
+            visibility: visible;
+
+.p_r_chars
+    margin: 15px 0;
+    width: 100%;
+    overflow: hidden;
+    &__item
+        color: #a7abae;
+        &.active
+            color: #d62f00;
+    &__select
+        font-size: 1.5em;
+        margin-right: 5px;
+    &__icon
+        width: auto;
+        height: 14px;
+        margin-right: 5px;
+    &__name
+        font-size: 1.2em;
+
+.p_r_about
+    width: 100%;
+    margin: 15px 0;
+    &:before
+        width: 45%;
+        display: block;
+        height: 2px;
+        background: #d61e28;
+        content: " "
+    &__title
+        font-size: 1.4em;
+        margin: 12px 0 5px 0;
+    &__text
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    &__bottom
+        width: 100%;
+        overflow: hidden;
+    &__char
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.1em;
+        & img
+            width: auto;
+            margin-right: 10px;
+
+.p_r_bottom
+    width: 100%;
+    overflow: hidden;
+    &__item
+        display: block;
+        text-align: right;
+        & .green
+            color: #578836
+
+.p_news
+    overflow: hidden;
+    width: 96%;
+    margin-right: 4%;
+    &__title
+        font-size: 1.5em
+        margin: 10px 0 15px 0;
+    &__list
+        width: 100%;
+        overflow: hidden;
+        margin: 15px 0;
+    &__pagination
+        width: 100%;
+        overflow: hidden;
+        margin: 15px 0;
+    &__bottom
+        overflow: hidden;
+        width: 100%;
+        margin: 30px 0 15px 0;
+
+.p_news_item
+    overflow: hidden;
+    width: 100%;
+    margin: 10px 0;
+    &__date
+        display: block;
+        margin-bottom: 10px;
+        color: #4c5e68;
+        font-size: 1.2em;
+        font-weight: 600;
+        & img
+            margin-right: 5px;
+            width: auto;
+            height: 15px;
+            margin-left: 5px;
+    &__image
+        overflow: hidden;
+        width: 100%;
+        & img
+            width: 100%;
+    &__text
+        color: #2b3033;
+        margin: 5px 0 18px 0;
+        font-size: 1.1em
+    &:after
+        display: block;
+        width: 25%;
+        height: 2px;
+        content: ' ';
+        background: #1c48a7
+
+.pagination
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    & li
+        display: inline-block;
+        color: #11489b;
+        font-size: 1.2em;
+        margin: 0 3px;
+        padding: 5px;
+        border-radius: 5px;
+        &.disabled
+            visibility: visible;
+        &.active, &:hover
+            color: #fff;
+            background: #1948a4;
+        & a
+            color: inherit;
+
+
+.p_news_add
+    width: 100%;
+    overflow: hidden;
+    background: #5694fb;
+    padding: 8px 20px;
+    border-radius: 5px;
+    &__input
+        width: 100%;
+        background: #fff;
+        margin: 10px 0;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        & input
+            width: 95%;
+            border: 0;
+            height: 30px;
+            padding: 10px 25px;
+            outline: 0;
+        & img
+            position: absolute;
+            top: 7px;
+            right: 19px;
+            cursor: pointer;
+    &__submit
+        border: 0px;
+        background: #15499f;
+        color: #fff;
+        font-size: 1.4em;
+        padding: 5px 30px;
+        border-radius: 5px;
+        margin-top: 5px;
+
+
+/*!********* company page ********/
+.p_company
+    overflow: hidden;
+    width: 100%;
+    margin: 30px auto;
+    max-width: 960px;
+    &__left
+        float: left;
+        width: 30%;
+    &__right
+        float: left;
+        width: 70%;
+
+.p_com
+    width: 80%;
+    overflow: hidden;
+    &_title
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    &_logo
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 3px solid #15499f;
+        padding: 2px;
+        margin: 20px 0 10px 10%;
+        &__img
+            width: 100%;
+    &_logo_block
+        position: relative;
+        overflow: hidden;
+        &__file
+            display: none;
+        &__upload
+            position: absolute;
+            top: 20px;
+            right: 30%;
+            cursor: pointer;
+    &_list
+        overflow: hidden;
+        margin: 10px 0;
+        &__item
+            margin: 5px 0;
+        &__img
+            margin-right: 8px;
+        &__text
+            font-size: 1.2em;
+            color: #455a64;
+
+.p_com_option
+    margin-top: 15px;
+    overflow: hidden;
+    &__item
+        overflow: hidden;
+        margin: 10px 0;
+        font-size: 1.2em;
+    &__name
+        float: left;
+        width: 20%;
+    &__val
+        float: left;
+        width: 70%;
+        font-weight: 600;
+        &-text
+            font-weight: 200;
+
+
+/*!******** slider items ***********/
+.p_v_c_top
+    overflow: hidden;
+    max-width: 980px;
+    width: 100%;
+    margin: 15px auto;
+    &__left
+        width: 80%;
+        float: left;
+        overflow: hidden;
+    &__right
+        width: 20%;
+        float: left;
+        overflow: hidden;
+
+.p_v_c_media
+    overflow: hidden;
+    padding-right: 15px;
+
+.p_v_c_slider
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 80%;
+    padding-right: 15px;
+    &__item
+        width: 100%;
+        overflow: hidden;
+        height: 340px;
+    &__image
+        width: 100%;
+
+.p_v_c_slider_menu
+    width: 20%;
+    float: left;
+    padding: 0 10px;
+    &__title
+        font-size: 1.2em;
+        font-weight: 600;
+        margin: 10px 0;
+    &__items
+        overflow: overlay;
+        width: 100%;
+        max-height: 302px;
+    &__item
+        margin: 5px 40px 5px 0;
+        cursor: pointer;
+    &__image
+        width: 100%
+
+.p_v_c_profile
+    overflow: hidden;
+    max-height: 340px;
+
+.p_v_c_logo
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #15499f;
+    padding: 2px;
+    margin: 10px auto;
+    &__image
+        width: 100%;
+
+.p_v_c_option
+    overflow: hidden;
+    margin-left: 15px;
+    &__item
+        margin: 2px 0;
+    &__img
+        position: relative;
+        top: 2px;
+        margin-right: 7px;
+        width: auto;
+        height: 13px;
+    &__text
+        font-size: 1.1em;
+
+.p_v_c_top_buttons
+    overflow: hidden;
+    margin: 15px 0;
+    &__item
+        border: 1px solid #d41f26;
+        background: #fff;
+        border-radius: 5px;
+        font-weight: 300;
+        font-size: 1.2em;
+        display: block;
+        width: 90%;
+        margin: 5px 0;
+        padding: 3px 0;
+        & img
+            width: auto;
+        &:hover, &.active
+            visibility: visible;
+
+/*!***** pvc main (page vip company main)********/
+.p_v_c_main
+    overflow: hidden;
+    width: 100%;
+    max-width: 980px;
+    margin: 15px auto;
+    &__left
+        width: 70%;
+        float: left;
+        padding-right: 20px;
+    &__right
+        width: 28%;
+        float: left;
+        margin-left: 1%;
+        margin: 15px 1%;
+
+.news_shares
+    width: 100%;
+    overflow: hidden;
+    &__title
+        font-size: 1.6em;
+    &__add
+        width: 100%;
+        border: 1px solid #15499f;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 5px 0;
+        margin: 10px 0;
+    &__input
+        border: 0;
+        width: 75%;
+        display: block;
+        float: left;
+        height: 25px;
+        padding: 3px 15px;
+    &__upload
+        overflow: hidden;
+        width: 5%;
+        float: left;
+        &__file
+            opacity: 0;
+            z-index: 99;
+            position: absolute;
+            cursor: pointer;
+            width: 30px;
+        &__img
+            margin: 4px auto 0 0;
+    &__button
+        background: #15499f;
+        color: #fff;
+        font-size: 1.1em;
+        padding: 4px 0;
+        border-radius: 10px;
+        border: 1px solid #15499f;
+        margin-top: 10px;
+        outline: 0;
+        display: block;
+        position: relative;
+        width: 18%;
+        margin: 0;
+        &:hover
+            background: #fff;
+            color: #15499f;
+
+.comment
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 12px 0.5px rgba(125,125,125,0.5);
+    padding: 15px;
+    &__title
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #15499f;
+        margin-bottom: 15px;
+    &__list
+        overflow: hidden;
+        position: relative;
+    &__item
+        overflow: hidden;
+        margin: 10px 0;
+    &__image_block
+        float: left;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 10px 5px;
+    &__image
+        width: 100%;
+    &__text_block
+        float: right;
+        width: 70%;
+    &__text
+        font-style: italic;
+        margin-bottom: 5px;
+        &:before
+            content: ' - '
+    &__name
+        font-weight: 600;
+    &__date
+        font-size: 0.8em;
+        font-weight: 600;
+    &__add
+        border: 1px solid #15499f;
+        border-radius: 5px;
+        overflow: hidden;
+    &__input
+        width: 70%;
+        border: 0;
+        padding: 5px 5px;
+        margin: 5px 0;
+        float: left;
+    &__submit
+        border: 1px solid #15499f;
+        display: block;
+        float: left;
+        background: #15499f;
+        color: #fff;
+        width: 28%;
+        overflow: hidden;
+        margin: 7px 2% 0 0;
+        border-radius: 5px;
+        font-size: 1.1em;
+        &:hover
+            background: #fff;
+            color: #15499f;
+
+.p_v_c_accaunt_info
+    text-align: right;
+    margin-top: 40px;
+    &__item
+        margin: 2px 0;
+    & .green
+        color: #568b3e;
+
+/*!********* update input classes ******/
+.form_update_input
+    border: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+    &.active
+        text-decoration: underline;
+
+.form_update_pencil
+    opacity: 0.65;
+    cursor: pointer;
+    &.active, &:hover
+        opacity: 1;
+    &__image
+        width: 16px;
+        height: auto;
+    &.hide
+        display: none;
+
+.form_update_ok
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #8bc34a;
+    opacity: 0.65;
+    &:hover
+        opacity: 1;
+    &.hide
+        display: none;
+
+.form_update_cancel
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #d41f26;
+    opacity: 0.8;
+    &:hover
+        opacity: 1;
+    &.hide
+        display: none;
+
+/*!******** tooltip image ************/
+.logo_tooltip
+    position: relative;
+    display: block;
+    float: right;
+    right: 58px;
+    top: -16px;
+    &_block
+        font-size: 12px;
+        display:none;
+        &__file
+            display:none
+        &__update
+            cursor: pointer;
+            color: #558a42;
+        &__delete
+            cursor: pointer;
+            color: #d41f26;
+
+
+/*!******** pop up select interest *****/
+.blog_add_modal
+    modal-template(25%)
+    padding-top: 250px;
+    &__body
+        width: 30%;
+        margin: auto;
+        padding: 25px 0;
+    &__content
+        padding: 25px;
+        box-shadow: 0px 0px 12px 0.5px rgba(125,125,125,0.5);
+    &__bottom
+        position: relative;
+        margin: 15px 0 0 0;
+        overflow: hidden;
+    &__cancel, &__ok
+        visibility: visible;
+    &__cancel
+        border: 1px solid #d41f26;
+        color: #fff;
+        background: #d41f26;
+        border-radius: 10px;
+        font-size: 1.2em;
+        padding: 5px 10px;
+        width: 25%;
+        float: left;
+        display: block;
+        &:hover
+            opacity: 0.75;
+    &__ok
+        border: 1px solid #15499f;
+        color: #fff;
+        background: #15499f;
+        border-radius: 10px;
+        font-size: 1.2em;
+        padding: 5px 10px;
+        width: 25%;
+        float: right;
+        display: block;
+        &:hover
+            opacity: 0.75;
+
+/*!********* swicth on off *********/
+.onoffswitch {
+    position: relative; width: 63px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    display: inline-block;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 5px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%;
+    color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+
+    height: 20px;
+    padding: 0;
+    line-height: 20px;
+    font-size: 12px;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 6px;
+    background-color: #DAECC5; color: #568B3E;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 6px;
+    background-color: #F4D0D2; color: #D41F26;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 26px;
+     margin: -0.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 37px
+    border: 2px solid #999999; border-radius: 5px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/*!****** styles on cabinet company vip ********/
+.p_v_c_settings
+    box-shadow: 0px 0px 12px 0.5px rgba(125,125,125,0.5);
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 80%;
+    padding-right: 15px;
+    font-size: 1.2em;
+    &__left
+        float: left;
+        width: 45%;
+        margin-left: 5px;
+    &__right
+        float: right;
+        width: 50%;
+
+.specail_input_c_vip
+    border: 1px solid #15499f;
+    padding: 6px 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #96999b;
+
+.specail_greating_c_vip
+    padding: 5px;
+    color: #96999b;

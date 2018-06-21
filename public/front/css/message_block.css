@@ -1,0 +1,45 @@
+.mess_block {
+	position: fixed;
+    z-index: 9999;
+    width: 400px;
+    overflow: hidden;
+    top: 20%;
+    left: calc(100% - 64%);
+    background: #fff;
+    border-radius: 5px;
+}
+.mess_block  .mess_title{
+	color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3em;
+}
+.mess_block.ok  .mess_title{
+	background-color: #8bc34a;
+}
+.mess_block.false  .mess_title{
+	background-color: #d41f26;
+}
+.mess_block  .mess_body{
+	text-align: center;
+    padding: 15px 10px;
+}
+.mess_block  .mess_footer{
+	text-align: center;
+    padding: 10px 0;
+}
+.mess_block  .mess_footer__button{
+	border: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+	margin-bottom: 3px;
+}
+.mess_block.ok   .mess_footer__button{
+    background: #8bc34a;
+}
+.mess_block.false   .mess_footer__button{
+    background: #d41f26;
+}

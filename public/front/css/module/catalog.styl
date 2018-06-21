@@ -1,0 +1,164 @@
+/*!******* catalogs *****/
+.catalogs
+    width: 90%;
+    margin: 120px auto 0 auto;
+    & .row
+        padding: 5px 0;
+        position: relative;
+    &__vip
+        border-top: 3px solid #d41f26
+        border-bottom: 3px solid #d41f26
+        overflow: hidden;
+        height: 169px;
+        position: relative;
+        &.catalog_vip_restoran
+            height: 280px;
+        &__before, &__after
+            position: absolute;
+            top: 35%;
+            color: #d41f26;
+            font-size: 2.5rem;
+            cursor: pointer;
+        &__before
+            left: -27px;
+
+        &__after
+            right: -27px;
+
+        & div
+            margin-right: 0;
+            transition: all 0.8s ease;
+            visibility: visible;
+            &.close-from-right
+                margin-right: -400px;
+                visibility: hidden;
+                transition: all 0.8s ease;
+            &.close-to-left
+                margin-left: -400px;
+                visibility: hidden;
+                transition: all 0.8s ease;
+
+    & .advert
+        border-radius: 5px
+        padding: 0;
+        overflow: hidden;
+        margin: 5px;
+        position: relative;
+        box-shadow: 0px 2px 7px 1px rgba(112,110,112,1);
+        &__image-block
+            height: 92px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        &__urgent
+            position: absolute;
+            z-index: 9;
+            top: 0;
+            &__trangle
+                border: 30px solid transparent;
+                border-left: 30px solid #d41f26;
+                border-top: 30px solid #d41f26;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+            & img
+                width: 36px;
+                margin: 4px;
+        &__image
+            width: 100%;
+            height: auto;
+        &__link
+            text-decoration: none;
+            color: inherit;
+        &__text-block
+            width: 100%;
+            height: 60px;
+            overflow: hidden;
+            background: #ffffff;
+            color: #40494d
+            padding: 5px;
+            font-size: 0.95em;
+
+            &.red
+                background: #d41f26;
+                color: #fff
+        &__title
+            text-decoration: underline;
+            margin: 0;
+            font-size: 1.2em;
+
+/*!*********** Restoran ad *************/
+& .ad_restoran
+    border-radius: 5px
+    padding: 0;
+    overflow: hidden;
+    margin: 5px;
+    position: relative;
+    box-shadow: 0px 2px 7px 1px rgba(112,110,112,1);
+    &__image-block
+        height: 260px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    &__image
+        width: 100%;
+        height: auto;
+    &__link
+        text-decoration: none;
+        color: inherit;
+    &__text-block
+        width: 100%;
+        height: 130px;
+        overflow: hidden;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        padding: 5px 11px;
+        font-size: 1.1em;
+        position: absolute;
+        bottom: 0;
+        &.red
+            background: rgba(212, 31, 38, 0.5);
+            color: #fff
+    &__title
+        text-decoration: underline;
+        margin: 0;
+        font-size: 1.2em;
+    &__chars
+        margin: 2px 0;
+        padding: 0;
+        list-style-type: none;
+        & li
+            display: inline;
+            margin-right: 8px;
+            font-size: 1.1em
+            &:before
+                display: inline;
+                content: '\2022';
+                margin-right: 5px;
+    &__location
+        display: block;
+        & img
+            margin-right: 5px;
+    &__stars
+        color: #ffd200;
+        font-size: 1.3em;
+
+    &__star
+        color: #ffd200;
+        font-size: 1.2em;
+        position: relative;
+        cursor: pointer;
+        &-full:before
+            color: #ffd200;
+            content: '\2605'; /* Full star in UTF-8 */
+            position: absolute;
+            left: 0;
+        &-half:before
+            color: #ffd200;
+            content: '\2605';
+            position: absolute;
+            left: 0;
+            width: 50%;
+            overflow: hidden;
+        &-empty
+            visibility: visible;

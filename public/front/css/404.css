@@ -1,0 +1,164 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #263238; }
+
+h1, .h1 {
+  font-size: 2.3em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 10px; }
+
+h2, .h2 {
+  font-size: 2em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 10px; }
+
+h3, .h3 {
+  font-size: 1.7em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 10px; }
+
+h4, .h4 {
+  font-size: 1.4em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 10px; }
+
+h5, .h5 {
+  font-size: 1.3em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 10px; }
+
+h6, .h6 {
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0 0 10px; }
+
+a {
+  color: #263238; }
+  a:hover {
+    text-decoration: none; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px; }
+  
+  .c-404 {
+  background: url("../../../images/c-404__bg.png") no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 10%; }
+  .c-404 .c-404__container {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 320px) {
+      .c-404 .c-404__container {
+        width: 300px; } }
+    @media (min-width: 568px) {
+      .c-404 .c-404__container {
+        width: 500px; } }
+    @media (min-width: 768px) {
+      .c-404 .c-404__container {
+        width: 600px; } }
+    @media (min-width: 990px) {
+      .c-404 .c-404__container {
+        width: 750px; } }
+    @media (min-width: 1200px) {
+      .c-404 .c-404__container {
+        width: 850px; } }
+    @media (min-width: 1410px) {
+      .c-404 .c-404__container {
+        width: 1000px; } }
+  .c-404 .c-404__header {
+    margin-bottom: 10px; }
+    @media (min-width: 320px) {
+      .c-404 .c-404__header {
+        font-size: 2em; } }
+    @media (min-width: 568px) {
+      .c-404 .c-404__header {
+        font-size: 3em; } }
+    @media (min-width: 768px) {
+      .c-404 .c-404__header {
+        font-size: 4em; } }
+    @media (min-width: 990px) {
+      .c-404 .c-404__header {
+        font-size: 5em; } }
+    @media (min-width: 1200px) {
+      .c-404 .c-404__header {
+        font-size: 6em; } }
+    @media (min-width: 1410px) {
+      .c-404 .c-404__header {
+        font-size: 7em; } }
+  .c-404 .c-404__body {
+    margin-bottom: 10px; }
+    @media (min-width: 320px) {
+      .c-404 .c-404__body {
+        font-size: 1.2em; } }
+    @media (min-width: 568px) {
+      .c-404 .c-404__body {
+        font-size: 1.4em; } }
+    @media (min-width: 768px) {
+      .c-404 .c-404__body {
+        font-size: 2em; } }
+    @media (min-width: 990px) {
+      .c-404 .c-404__body {
+        font-size: 2.4em; } }
+    @media (min-width: 1200px) {
+      .c-404 .c-404__body {
+        font-size: 2.7em; } }
+    @media (min-width: 1410px) {
+      .c-404 .c-404__body {
+        font-size: 3em; } }
+  @media (min-width: 320px) {
+    .c-404 .c-404__footer {
+      font-size: 1em; } }
+  @media (min-width: 568px) {
+    .c-404 .c-404__footer {
+      font-size: 1em; } }
+  @media (min-width: 768px) {
+    .c-404 .c-404__footer {
+      font-size: 1em; } }
+  @media (min-width: 990px) {
+    .c-404 .c-404__footer {
+      font-size: 1.3em; } }
+  @media (min-width: 1200px) {
+    .c-404 .c-404__footer {
+      font-size: 1.4em; } }
+  @media (min-width: 1410px) {
+    .c-404 .c-404__footer {
+      font-size: 1.5em; } }
+  .c-404 .c-404__strong {
+    font-weight: bold; }
+  .c-404 .c-404__link {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff; }
+    .c-404 .c-404__link:hover {
+      border-color: transparent; }

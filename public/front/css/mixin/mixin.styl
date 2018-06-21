@@ -1,0 +1,168 @@
+// variables
+color-text = #263238;
+color-green = #568b3e;
+
+c_green = #8bc34a;
+c_dark_green = #568b3e;
+c_blue = #2962ff;
+c_red = #dd2c00
+c_fiol = #6200ea
+c_orange = #d93300
+
+
+// functions
+vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    -o-{prop} args
+    {prop} args
+
+box-shadow()
+    -webkit-box-shadow arguments
+    -moz-box-shadow arguments
+    box-shadow arguments
+    html.ie8 &,
+    html.ie7 &,
+    html.ie6 &
+        border 2px solid arguments[length(arguments) - 1]
+
+border-radius()
+   vendor('border-radius', arguments)
+
+box-sizing()
+   vendor('box-sizing', arguments)
+
+box-shadow()
+    vendor('box-shadow', arguments);
+
+transition()
+    vendor('transition', arguments)
+
+transition-duration()
+    vendor('transition-duration', arguments)
+
+/*!********* button template *************/
+button-template(back-color)
+    box-sizing: border-box;
+    border: 1px solid back-color;
+    border-radius: 5px;
+    background: back-color;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: all 0.4s ease
+    & img
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        margin-bottom: 2px;
+        vertical-align: middle;
+    &:hover
+        border: 1px solid back-color
+        background: #fff
+        color: back-color
+        transition: all 0.4s ease
+
+/*!*********** button curcle template *************/
+curcle-template(back-color)
+    box-sizing: border-box
+    border: 1px solid back-color
+    border-radius: 50%
+    background: back-color
+    padding: 5px
+    color: #fff
+    font-size: 1.5em
+    position: relative;
+    transition: all 0.4s ease
+    & img
+        width: 20px
+        height: 20px
+        margin: 5px
+        vertical-align: middle
+        fill: back-color
+    &:hover
+        border: 1px solid back-color
+        background: #fff
+        color: back-color
+        transition: all 0.4s ease
+    &__count
+        position: absolute
+        background: #f85c5c
+        padding: 2px 6px
+        border-radius: 50%
+        font-size: 0.8em
+        right: -6px
+        top: -15px;
+        color: #fff;
+
+/*!*********** modal template ***************/
+modal-template(width)
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    &__content
+        background-color: #fefefe;
+        margin: auto;
+        width: width;
+        position: relative;
+        border-radius: 10px;
+    &__close
+        color: #fff;
+        font-size: 19px;
+        font-weight: bold;
+        display: block;
+        position: absolute;
+        top: -11px;
+        right: -13px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #d41f26;
+        width: 26px;
+        text-align: center;
+        cursor: pointer;
+    &.open
+        display: block
+
+/*!************* button in modal template ************/
+button-login-template(back-color, font-color, hover-color)
+    box-sizing: border-box;
+    border: 1px solid back-color;
+    border-radius: 5px;
+    background: back-color;
+    padding: 5px 15px;
+    color: font-color;
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    box-shadow: 11px 12px 17px -9px rgba(112,108,112,1);
+    & img
+        height: 25px;
+        margin-bottom: 2px;
+        vertical-align: middle;
+        float: left;
+        margin-left: 27px;
+    &:hover, &.active
+        border: 1px solid hover-color
+        background: hover-color
+        color: font-color
+        transition: all 0.4s ease
+
+/*!************ input template *******************/
+input-template(color-border)
+    width: 100%;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: 1px solid color-border;
+    padding: 6px 15px;
+    outline: none;
+    &:hover
+        border-radius: 5px;
+        border: 1px solid color-border;

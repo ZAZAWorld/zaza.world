@@ -1,0 +1,96 @@
+/*!******** menu-bar ******/
+.menu-bar
+    z-index: 99;
+    position: fixed;
+    top: 120px;
+    left:0;
+    border-radius: 0 5px 5px 0;
+    background: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &__image
+        width: 24px;
+        height: 24px;
+
+    &.open
+        left: 300px;
+
+/***** bar ***/
+.bar
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background: #e7ecf5;
+    color: #000;
+    width: 300px;
+    height: 100%;
+    text-align: left;
+    transition-duration: 0.3s;
+    &.open
+        left: 0;
+    &__ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+    &__li
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        &__img
+            color: #d93300;
+            font-size: 1.2em;
+            line-height: 0.1em;
+            position: relative;
+            top: 5px;
+        &_title
+            background: #90a4ae;
+            color: #fff;
+            padding: 10px 15px 10px 15px;
+            display: block;
+            font-size: 1.2em;
+            display: block;
+            width: 100%;
+            font-size: 1.4em
+            &.active, &:hover
+                background: #798f9a
+        &_icon
+            height: 20px;
+            width: 20px;
+        &_open
+            height: 20px;
+            width: 20px;
+            display: block;
+            float: right;
+            cursor: pointer
+            &.icon-plus:before
+                content: '\e910';
+                font-size: 1.5em;
+            &.icon-minus:before
+                content: '\e911';
+                font-size: 1.5em;
+
+    &__sub__ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+        display: none;
+    &__sub__li
+        width: 100%
+        border-bottom: 1px solid #c1c5ce
+        &_title
+            display: block;
+            width: 100%;
+            padding: 10px 0 10px 42px;
+            color: #242b33;
+            font-size: 1.15em;
+            &.active, &:hover
+                background: #ccd2de
+        &_open
+            width: 20px;
+            display: block;
+            float: right;
+            color: #e46449;
+            font-size: 1.2em;
+            font-weight: 600;

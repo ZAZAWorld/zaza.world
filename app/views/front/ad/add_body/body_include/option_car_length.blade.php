@@ -1,0 +1,2 @@
+{{TransWord::getArabic($props->get(21)->name)}}
+<input name="prop[21]" value="{{ (!empty($advert_props) && isset($advert_props[21])) ? $advert_props[21][0] : '' }}" type="text" class="add_ad_option__inline" />

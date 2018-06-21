@@ -1,0 +1,889 @@
+
+
+/*!******* login modal dialog *****/
+.login-modal
+    modal-template(25%)
+    &__body
+        width: 80%;
+        margin: auto;
+        padding: 25px 0;
+
+.b_facebook
+    button-login-template(#3b5998, #fff, #627aad)
+
+.b_google
+    button-login-template(#ffffff, #676d70, #dddddd)
+
+.or_block
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 25px 0;
+    &:before, &:after
+        display: inline-block;
+        width: 41%;
+        border-top: 2px solid #bdc1c3;
+        height: 6px;
+        content: '';
+    &__inside
+        display: inline-block;
+        width: 16%;
+        text-align: center;
+        color: #bdc1c3;
+        font-size: 1.5em;
+
+.b_req_login
+    button-login-template(#15499f, #fff, #ffffff)
+    border: 1px solid #15499f;
+    margin-top: 39px;
+    display: block
+    padding: 0 15px 5px;
+    &__spec
+        font-size: 1.7em;
+        position: relative;
+        top: 4px;
+    &:hover
+        color: #15499f;
+        border: 1px solid #15499f;
+
+.b_req_person
+    button-login-template(#8bc34a, #fff, #568b3e)
+    &__spec
+        font-size: 1.9em;
+        position: relative;
+        top: 7px;
+        line-height: 0.5em;
+        left: -33px;
+
+.b_req_company
+    button-login-template(#dd2c00, #fff, #fc5228)
+    &__spec
+        font-size: 1.9em;
+        position: relative;
+        top: 7px;
+        line-height: 0.5em;
+        left: -33px;
+
+.b_req_input
+    input-template(#15499f)
+
+.b_req_forgot
+    color: #4868ac;
+    border-bottom: 1px dotted #4868ac;
+    &:hover
+        color: #d7383d
+
+/*!***** registration company **************/
+.req_com_modal
+    modal-template(40%)
+    &__content
+        border-top-left-radius: 0;
+    &__body
+        width: 94%;
+        margin: auto;
+        padding: 25px 0;
+        display: none;
+        &.active
+            display: block;
+    &__steps
+        display: block;
+        position: absolute;
+        top: -24px;
+        & .step_1, & .step_2, & .step_3
+            display: block;
+            position: absolute;
+            width: 55px;
+            color: #fff;
+            padding: 5px 9px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            transition: all 0.4s ease
+        & .step_1.active, & .step_2.active, & .step_3.active
+            z-index: 9999 !important;
+            padding: 9px 11px !important;
+            width: 59px !important;
+            margin-top: -8px !important;
+/*!***
+        & .step_1:hover, & .step_2:hover, & .step_3:hover
+            z-index: 99999 !important;
+            padding: 9px 11px !important;
+            width: 59px !important;
+            margin-top: -8px !important;
+****/
+
+        & .step_1
+            background: #15499f;
+            z-index: 903;
+        & .step_2
+            background: #2962ff;
+            z-index: 902;
+            left: 52px;
+        & .step_3
+            background: #5694fa;
+            z-index: 901;
+            left: 102px;
+
+.b_com_cat_dining
+    button-login-template(#fff, #fff, #dd2c00)
+    border: 1px solid #dd2c00
+    color: #dd2c00;
+    width: 95%;
+    box-shadow: none;
+    font-size: 1.2em;
+    & img
+        height: 19px;
+        margin-left: 0
+        content:url(../../img/icons/select-red.png);
+    &:hover img, &.active img
+        content:url(../../img/icons/select-white-hover.png);
+
+.b_com_cat_shop
+    button-login-template(#fff, #fff, #2962ff)
+    border: 1px solid #2962ff
+    color: #2962ff;
+    width: 95%;
+    box-shadow: none;
+    font-size: 1.2em;
+    & img
+        height: 19px;
+        margin-left: 0
+        content:url(../../img/icons/select-blue.png);
+    &:hover img, &.active img
+        content:url(../../img/icons/select-white-hover.png);
+
+.b_com_cat_service
+    button-login-template(#fff, #fff, #6200ea)
+    border: 1px solid #6200ea
+    color: #6200ea;
+    width: 95%;
+    box-shadow: none;
+    font-size: 1.2em;
+    & img
+        height: 19px;
+        margin-left: 0
+        content:url(../../img/icons/select-fiol.png);
+    &:hover img, &.active img
+        content:url(../../img/icons/select-white-hover.png);
+
+.b_com_cat
+    display: none;
+    &.open
+        display: block;
+
+/*!***** forgot password modal *****/
+.f_pass_modal
+    modal-template(25%)
+    &__body
+        width: 80%;
+        margin: auto;
+        padding: 25px 0;
+
+.b_f_password
+    button-login-template(#15499f, #fff, #1562e1)
+
+.b_sel_blue
+    input-template(#15499f)
+    &.hide
+        display: none;
+
+.link_plus
+    color: #263238;
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2em;
+    & img
+        width: 18px;
+        height: 18px;
+        display: block;
+        float: left;
+        margin-right: 16px;
+
+.req_com_modal__footer
+    overflow: auto;
+    margin-top: 20px;
+
+.b_com_back
+    box-sizing: border-box;
+    border: 1px solid #5694fa;
+    border-radius: 5px;
+    background: #5694fa;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 1.5em;
+    display: block;
+    width: 25%;
+    margin: 10px 24px;
+    float: left;
+    outline: none;
+    & img
+        display: block;
+        float: left;
+        margin: 8px 0 0 0;
+
+.b_com_next
+    box-sizing: border-box;
+    border: 1px solid #15499f;
+    border-radius: 5px;
+    background: #15499f;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 1.5em;
+    display: block;
+    width: 25%;
+    margin: 10px 24px;
+    float: right;
+    outline: none;
+    & img
+        display: block;
+        float: right;
+        margin: 8px 0 0 0;
+
+.b_req_input_add
+    margin-top: 12px;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+
+.youtube_block_img
+    width: 100%;
+    margin: 15px 0;
+    box-sizing: border-box;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 6px 40px -3px rgba(117,117,117,1);
+    &__bg
+        width: 100%
+        height: auto
+    &__play
+        position: absolute;
+        top: 39%;
+        right: 45%;
+
+.link_yout_channel
+    color: #4c6773;
+    display: block;
+    text-decoration: underline;
+    margin-left: 5px;
+    & img
+        display: block;
+        float: right;
+        margin-top: -18px;
+
+.license_block
+    width: 100%;
+    margin: 35px 0 15px 0;
+    &__title
+        color: #263238;
+        margin: 9px 0;
+        font-size: 1.2em;
+    &__input
+        width: 100%;
+        color: #96999b;
+        line-height: 0.9em;
+        margin: 15px 0;
+        position: relative;
+        padding: 10px;
+        border: 1px solid #15499f;
+        border-radius: 5px;
+        & input
+            width: 65%;
+            opacity: 0;
+            position: absolute;
+            z-index: 9;
+            height: 30px;
+        & .text .text_blue
+            color: #99a8cc
+        & .js_add_license
+            display: block;
+            position: absolute;
+            top: 9px;
+            right: 5px;
+            cursor: pointer;
+    &__image
+        width: 90%;
+        margin-top: 7px;
+    &__button
+        button-login-template(#15499f, #fff, #15499f)
+        box-shadow: none;
+
+.upload_logo
+    position: relative;
+    margin: 33px 0;
+    &__file
+        width: 80%;
+        opacity: 0;
+        position: absolute;
+        z-index: 9;
+        height: 122px;
+    &__circle
+        border: 1px solid #15499f
+        border-radius: 50%;
+        height: 50%;
+        min-height: 129px;
+        width: 60%;
+        text-align: center;
+        padding: 28px;
+        margin: 0 auto;
+        color: #bac4dc
+        overflow: hidden;
+        &.with_image
+            padding: 0;
+        & .upload_logo__image
+            width: 100%;
+    &__add
+        position: absolute;
+        top: 5px;
+        right: 34px;
+        cursor: pointer;
+
+.choose_plan_title
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-size: 1.9em;
+
+.plan_free
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 6px 40px -3px rgba(117,117,117,1);
+    &__header
+        background: #d41f26;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.2em;
+    &__body
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    &__punkt
+        width: 100%;
+        margin: 5px 0;
+        color: #263238;
+        font-weight: 600
+        & img
+            margin-right: 7px;
+    &__footer
+        width: 100%;
+        margin-bottom: 18px;
+    &__button
+        button-login-template(#fff, #fff, #dd2c00)
+        border: 1px solid #dd2c00
+        color: #dd2c00;
+        box-shadow: none;
+        font-size: 1.2em;
+        width: 60%;
+        margin: 0 auto;
+        & img
+            height: 19px;
+            margin-left: 0
+            content:url(../../img/icons/select-red.png);
+        &:hover img, &.active img
+            content:url(../../img/icons/select-white-hover.png);
+
+.plan_prem
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 6px 40px -3px rgba(117,117,117,1);
+    &__header
+        background: #8bc34a;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.2em;
+        &__sale
+            background: #568b3e;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 1.1em;
+            &__line
+                color:red;
+                text-decoration:line-through
+            &__normal
+                color: #fff
+    &__body
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    &__punkt
+        width: 100%;
+        margin: 5px 0;
+        color: #263238;
+        font-weight: 600
+        & img
+            margin-right: 7px;
+    &__footer
+        width: 100%;
+        margin-bottom: 18px;
+    &__button
+        button-login-template(#fff, #fff, #8bc34a)
+        border: 1px solid #8bc34a
+        color: #8bc34a;
+        width: 95%;
+        box-shadow: none;
+        font-size: 1.2em;
+        width: 60%;
+        margin: 0 auto;
+        & img
+            height: 19px;
+            margin-left: 0
+            content:url(../../img/icons/select-green.png);
+        &:hover img, &.active img
+            content:url(../../img/icons/select-white-hover.png);
+
+/*!***************** Add ads **************/
+.add_ad_modal
+    modal-template(40%)
+    &__content
+        border-top-left-radius: 0;
+        width: 100%;
+        max-width: 800px;
+    &__body
+        width: 90%;
+        margin: auto;
+        padding: 25px 0;
+        display: none;
+        &.active
+            display: block;
+    &__steps
+        display: block;
+        position: absolute;
+        top: -24px;
+        & .step_1, & .step_2, & .step_3
+            display: block;
+            position: absolute;
+            width: 55px;
+            color: #fff;
+            padding: 5px 9px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            //cursor: pointer;
+            transition: all 0.4s ease
+        & .step_1.active, & .step_2.active, & .step_3.active
+            z-index: 9999 !important;
+            padding: 9px 11px !important;
+            width: 59px !important;
+            margin-top: -8px !important;
+        /*
+        & .step_1:hover, & .step_2:hover, & .step_3:hover
+            z-index: 99999 !important;
+            padding: 9px 11px !important;
+            width: 59px !important;
+            margin-top: -8px !important;
+        */
+        & .step_1
+            background: #15499f;
+            z-index: 903;
+        & .step_2
+            background: #2962ff;
+            z-index: 902;
+            left: 52px;
+        & .step_3
+            background: #5694fa;
+            z-index: 901;
+            left: 102px;
+
+.add_ad_line
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px
+    &__title
+        font-size: 1.4em;
+        margin-bottom: 10px;
+        text-align: center;
+    &__stroke
+        width: 98%;
+        overflow: hidden;
+        height: 2px;
+        background: #15499f;
+        margin: 14px auto 8px auto;
+    &__ball_1, &__ball_2, &__ball_3
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        border: 3px solid #2962ff;
+        position: absolute;
+        bottom: 0;
+    &__ball_1
+        left: 0;
+    &__ball_2
+        left: 48%
+    &__ball_3
+        right: 0;
+    &__ball-blue
+        background: #2962ff;
+        border: 3px solid #a1b6d9;
+    &__ball-check
+        visibility: visible;
+        & span
+            color: #dd2d02;
+            font-size: 2.0em;
+            display: block;
+            position: relative;
+            top: -16px;
+    &__ball-red
+        background: #dd2c00;
+        border: 3px solid #f1ab99;
+    &__ball-green
+        background: #568b3e;
+        border: 3px solid #bbd1b2;
+
+.add_ad_type
+    margin: 10px 0;
+    &__title
+        font-size: 1.2em;
+        margin-left: 10px;
+    &__list
+        margin: 10px 0 10px 10px;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    &__item
+        display: block;
+        cursor: pointer;
+        &.active .add_ad_type__text, &:hover .add_ad_type__text
+            visibility: visible;
+        &.active .add_ad_type__img, &:hover .add_ad_type__img
+            color: #e22c07;
+    &__img
+        font-size: 2.5em;
+        color: #15499c;
+    &__text
+        visibility: hidden;
+        width: 0;
+
+.add_ad_cats
+    width: 90%;
+    margin: 15px auto;
+    &__item
+        margin: 5px 0;
+
+.add_ad_field
+    width: 100%;
+    border: 1px solid #263238;
+    border-radius: 5px;
+    padding: 6px 13px;
+    color: #263238;
+    font-size: 1.2em;
+    &:hover, &:focus
+        border: 1px solid #15499f;
+        color: #15499f;
+
+.add_ad_car_icon
+    width: auto;
+    height: 39px;
+
+.add_ad_tutorial
+    width: 90%;
+    margin: 15px auto;
+    &__left
+        width: 50%;
+        float: left;
+    &__right
+        width: 50%;
+        float: left;
+    &__title
+        margin-top: 60px;
+        color: #dd2c00;
+        font-size: 2.5em;
+        font-weight: 600;
+    &__text
+        margin-top: 12px;
+        font-size: 1.4em;
+    &::after
+        content:"";
+        display:block;
+        clear:both;
+
+.add_ad_buttons
+    overflow: hidden;
+    width: 90%;
+    margin: 15px auto 5px auto;
+    &_full
+        width: 100% !important;
+    &__before, &__next
+        border-radius: 5px;
+        color: #fff;
+        padding: 5px 15px;
+        font-size: 1.4em;
+        display: block;
+        width: 25%;
+    &__before
+        border: 1px solid #5694fa;
+        background: #5694fa;
+        float: left;
+        & img
+            display: block;
+            float: left;
+            margin: 8px 0 0 0;
+    &__next
+        border: 1px solid #15499f;
+        background: #15499f;
+        float: right;
+        & img
+            display: block;
+            float: right;
+            margin: 8px 0 0 0;
+
+.add_ad_feilds
+    overflow: hidden;
+    margin: 15px 0;
+    &__line
+        margin: 5px 0;
+        overflow: hidden
+    &__left
+        width: 30%;
+        float: left;
+        padding-right: 10px;
+    &__upload
+        margin: 10px 0;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #15499f;
+        text-align: center;
+        &_file
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 69px;
+            z-index: 9999;
+            opacity: 0;
+        &_img
+            margin: 10px 0 5px 0;
+        &_text
+            color: #15499f;
+            margin-bottom: 15px;
+    &__right
+        float: left;
+        width: 70%;
+        padding-left: 20px;
+        padding-top: 15px;
+    &__youtube
+        width: auto;
+        height: 14px;
+        margin-right: 10px;
+
+.add_ad_price
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+.add_ad_price_field
+    float: left;
+    width: 30%;
+    border: 1px solid #565a5d;
+    &__img
+        font-size: 1.9em;
+        color: #7c8389;
+        line-height: 0.5em;
+        position: relative;
+        top: 6px;
+        margin-right: 5px;
+        margin-left: 5px;
+    &__input
+        width: 85%;
+        height: 28px;
+        padding: 3px 7px;
+        border: 0;
+
+.add_ad_price_dop
+    float: left;
+    width: 68%;
+    margin-left: 2%;
+    position: relative;
+    border: 1px solid #565a5d;
+    background: #fff;
+    &__title
+        position: absolute;
+        top: -19px;
+        left: -1px;
+        color: #fff;
+        background: #568b3e;
+        padding: 2px 3px;
+    &__block
+        display: inline-block;
+        margin: 5px 10px;
+    &__item
+        visibility: visible;
+
+.add_ad_option
+    margin: 15px 0;
+    &_top-border
+        border-top: 2px solid #bfc0c2;
+        padding-top: 10px;
+        border-bottom: 2px solid #bfc0c2;
+        padding-bottom: 10px;
+    &_all-border
+        border: 2px solid #bfc0c2;
+        border-radius: 5px;
+        padding: 10px 10px;
+    &__list
+        display: inline-block;
+        &_horizontal
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            & li
+                display: inline-block;
+                margin-right: 7px;
+                font-size: 1.1em;
+    &__img
+        font-size: 1.9em;
+        line-height: 0.5em;
+    &__icon
+        font-size: 2.5em;
+        line-height: 0.7em;
+    &__title
+        font-size: 1.1em;
+    &__line
+        margin: 10px 0;
+        overflow: hidden;
+    &__inline
+        width: 80%;
+        font-size: 18px;
+    &__label
+        font-size: 14px;
+
+.ad_special_line
+    border-bottom: 2px solid #bfc0c2;
+    margin: 5px 0 20px 0;
+
+.add_ad_bottom
+    margin: 10px 0;
+    padding-bottom: 6px;
+    &__row
+        margin: 7px 0;
+    &__col
+        padding-right: 25px;
+
+.add_ad_vip
+    position: relative;
+    &__top
+        width: 111%;
+        left: -5.5%;
+        padding: 7px 5.5% 6px 5.5%;
+        color: #fff;
+        background: #8bc34a;
+        position: relative;
+        text-align: center;
+        font-size: 1.5em;
+    &__title_img
+        visibility: visible;
+    &__body
+        width: 111%;
+        left: -5.5%;
+        padding: 7px 5.5% 6px 5.5%;
+        background: #e6f1d9;
+        position: relative;
+
+    &__bottom
+        width: 111%;
+        left: -5.5%;
+        padding: 7px 5.5% 6px 5.5%;
+        background: #8bc34a;
+        position: relative;
+
+.add_ad_vip_block
+    display: flex;
+    justify-content: space-between;
+    &__item
+        width: 45%;
+        background: #fff;
+        position: relative;
+        margin-bottom: 15px;
+        overflow: hidden;
+        border: 1px solid #dd2c00;
+        &_grey
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+    &__price
+        position: absolute;
+        top: 9px;
+        left: 0;
+        z-index: 10;
+        color: #fff;
+        transform: rotate(-45deg);
+    &__price-back
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 25px solid transparent;
+        border-left: 25px solid #dd2c00;
+        border-top: 25px solid #dd2c00;
+    &__check
+        position: absolute;
+        top: 5px;
+        right: 2px;
+        color: #dd2c00;
+        font-size: 20px;
+        cursor: pointer;
+    &__body
+        position: relative;
+        margin: 25px auto 0 auto;
+        text-align: center;
+    &__title
+        margin: 0;
+        color: #568b3e;
+    &__sub_title
+        margin: 0;
+        color: #96999b;
+        font-size: 16px;
+    &__slogan
+        display: block;
+        margin-bottom: 10px;
+        color: #dd2c00;
+        font-size: 14px;
+        font-weight: 600;
+    &__bottom
+        text-align: left;
+        margin-bottom: 10px;
+        margin: 10px 20px 10px 30px
+        & img
+            width: 100%;
+    &__input_label
+        font-size: 1.3em;
+        font-weight: 600;
+    &__input
+        width: 100%;
+        border: 1px solid #1a4da1;
+        font-size: 12px;
+        padding: 2px 5px;
+    &__bottom_line
+        overflow: hidden;
+        margin: 15px 0;
+    &__input_check
+        font-size: 1.2em;
+        font-weight: 600;
+    &_red
+        color: #dd2c00;
+        text-align: left;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 7px;
+    &__sub_title-small
+        margin: 0;
+        color: #96999b;
+        font-size: 12px;
+    &__submit
+        width: 90%;
+        margin: 10px 0 0 0;
+        text-align: center;
+        padding: 5px 0;
+        color: #fff;
+        background: #15499f;
+        border: 1px solid #15499f;
+        border-radius: 9px;
+        font-size: 16px;
+        &:hover
+            opacity: 0.6;
